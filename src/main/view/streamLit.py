@@ -12,7 +12,7 @@ import numpy as np
 import scipy
 from modelProphet import main as gpuModelForecast
 from streamlit_option_menu import option_menu
-
+from datetime import date
 
 
 
@@ -25,12 +25,14 @@ st.set_page_config(
      page_icon="✨",
      layout="wide",
      initial_sidebar_state="collapsed"
- )
+)
+currentDate = date.today()
+currentFormatedDate = currentDate.strftime("%B %d, %Y")
 
 def homeIntroProject():
     st.title('Welcome to the Gpu Price Prediction Project')
     st.markdown("Hello there! Have you ever spent your time thinking about.. When the graphics cards prices will go down or up? (ง︡'-'︠)ง Well you are in the right place here is a linear regression model to help you find those numbers !")
-    st.markdown("If you are interested in how this app was developed check out my GitHub [HattoriHamzo](https://github.com)")
+    st.markdown("If you are interested in how this app was developed check out my GitHub [HattoriHamzo](https://github.com/HattoriHamzo/gpuProject.git)")
     st.text('')
     st.text('')
     dropDownData = st.expander('✨ You can click here to see the raw data ✨')
@@ -54,6 +56,7 @@ def homeIntroProject():
         dropDownData = st.expander('✨ You can click here if you want to know what a Linear Regression Model is ✨')
         with dropDownData:
             st.write('Linear regression is a basic and commonly used type of predictive analysis.  The overall idea of regression is to examine two things: [1] does a set of predictor variables do a good job in predicting an outcome (dependent) variable?  [2] Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable?  These regression estimates are used to explain the relationship between one dependent variable and one or more independent variables.')
+            st.write('If you want to know more about this you can click [Here](https://towardsdatascience.com/linear-regression-detailed-view-ea73175f6e86?gi=5e8bc56f5da0) ')
 
 
     regeressionModelImageColumn, gpuImageColumn, blankColumn = st.columns(3)
@@ -80,19 +83,22 @@ def homeIntroProject():
 
 # Header
 def headerFrame():
-    st.title("GPU PRICE PREDICTION PROJECT")
+    st.subheader(' ')
+    st.write("Well, here you are going to see a lot of data related with the RTX 3000 SERIES, so you can play with them and get the future pricing of the 3000 series (all of them) thanks to the power of AI")
+    st.write("The main goal of this is to show the power of the AI, the beneficts it has, how you can use it depending the situation, what do you need at the time and more more things you can relate to")
+    st.subheader(' ')
     st.header("Data about RTX 3000 SERIES")
-    st.write("In this table you can see the prices of the RTX series 3000 from Nvidia and his different brands")
+    st.write(f"In this table you can see the prices of the RTX series 3000 from Nvidia and his different brands currently at {currentFormatedDate}")
+    st.subheader(' ')
     df = pd.DataFrame(
         getData.getAllGpuData())
 
     st.dataframe(df)
+    st.subheader(' ')
     st.subheader("Brand Selection")
     st.write("✨ Here you can choose whatever brand you want to see on the graphic below ✨")
-
 # MultiSelect
 def multiSelectBased():
-    
     gpuBrand = st.multiselect(
     "Select a Brand",
     ("ASUS", "EVGA", "GIGABYTE", "MSI", "MAXSUN", "PNY", "ZOTAC"),
@@ -102,6 +108,7 @@ def multiSelectBased():
 
     #DataFrame
     try:
+        st.subheader(' ')
         df = pd.DataFrame(
         getData.getGpuBrand(getData.listToString(gpuBrand,'|')[:-1]))
 
@@ -111,7 +118,7 @@ def multiSelectBased():
         y='gpu_price:Q',  # specify quantitative data
         color='gpu_name:N',
         tooltip=[alt.Tooltip('gpu_price:Q', title='GPU PRICE')]
-        ).properties(title="Predicted Price", height = 500)
+        ).properties(title=f"Currently priced RTX {currentFormatedDate}", height = 500)
         chart.encoding.x.title = 'GPU NAME'
         chart.encoding.y.title = 'GPU PRICE'
         chart.encoding.color.title = 'GPU BRAND'
@@ -120,6 +127,7 @@ def multiSelectBased():
         st.write("Please Select a brand")
 
 def foreCastModel():
+    st.subheader(' ')
     gpuModelForecast.gpuForecastingModel()
 
 
@@ -140,7 +148,7 @@ def sideBarMenu():
     if selected == "Home":
         homeIntroProject()
     if selected == "Price Prediction Project":
-        st.title(f"WELCOME TO THE PRICE PREDICTION PROJECT")
+        st.title(f"WELCOME TO THE RTX SERIES 3000 PRICE PREDICTION PROJECT")
         headerFrame()
         multiSelectBased()
         foreCastModel()
