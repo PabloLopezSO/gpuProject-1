@@ -116,7 +116,7 @@ Why I did this?:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can't use this program locally, because It's deployed on Azure (Virtual Machine Instance) and Aamazon Web Services (Elastic Compute 2) and the database is also from Amazon Web Services (Relational Database Service)
+You can't use this program locally, because It's deployed on Azure (Virtual Machine Instance) and Amazon Web Services (Elastic Compute 2) and the database is also from Amazon Web Services (Relational Database Service)
 
 ### Prerequisites
 
