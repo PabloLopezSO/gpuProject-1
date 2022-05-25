@@ -21,7 +21,7 @@ REMEMBER TO DISCONNECT FROM THE VPN ON THE LAPTOP WHEN YOU ARE GOING TO LAUNCH C
 -->
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) <br>
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/yourGitHubName/yourRepo/yourApp/)
-[![GitHub branches](https://badgen.net/github/branches/Naereen/Strapdown.js)](https://github.com/PabloLopezSO/gpuProject/branches)<br>
+[![GitHub branches](https://badgen.net/github/branches/Naereen/Strapdown.js)](https://github.com/HattoriHamzo/gpuProject/branches)<br>
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
 
@@ -31,7 +31,7 @@ REMEMBER TO DISCONNECT FROM THE VPN ON THE LAPTOP WHEN YOU ARE GOING TO LAUNCH C
 <br />
 <div align="center">
     <a href="https://github.com/PabloLopezSO">
-        <img src="https://github.com/PabloLopezSO/gpuProject/blob/main/resources/logo.png?raw=true" alt="Logo" width="80" height="80">
+        <img src="https://github.com/HattoriHamzo/gpuProject/blob/main/resources/logo.png?raw=true" alt="Logo" width="80" height="80">
     </a>
   <h3 align="center">Gpu Project Readme</h3>
 
@@ -76,7 +76,7 @@ REMEMBER TO DISCONNECT FROM THE VPN ON THE LAPTOP WHEN YOU ARE GOING TO LAUNCH C
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](https://github.com/PabloLopezSO/gpuProject/blob/main/resources/streamLitCapture.png?raw=true)
+![Product Name Screen Shot](https://github.com/HattoriHamzo/gpuProject/blob/main/resources/streamLitCapture.PNG?raw=true)
 
 This project is a machine learning oriented project, What I want to say with this .. This project has many different outputs, you can use it for Gpu Pricing (Like mine), stocks, stock pricing ... And many more things, even things related to medicine.
 
