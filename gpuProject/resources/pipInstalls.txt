@@ -1,0 +1,5 @@
+pip3 install sqlalchemy pymysql luigi streamlit streamlit-option-menu plotly scipy
+
+
+//sudo apt install python3-tk
+//python3 -m luigi --module main ExecuteStreamLit --local-scheduler
