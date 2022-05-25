@@ -31,7 +31,7 @@ REMEMBER TO DISCONNECT FROM THE VPN ON THE LAPTOP WHEN YOU ARE GOING TO LAUNCH C
 <br />
 <div align="center">
     <a href="https://github.com/PabloLopezSO">
-        <img src="https://github.com/PabloLopezSO/gpuProject/blob/main/resources/logo.png?raw=true" alt="Logo" width="80" height="80">
+        <img src="https://github.com/HattoriHamzo/gpuProject/blob/main/resources/logo.png?raw=true" alt="Logo" width="80" height="80">
     </a>
   <h3 align="center">Gpu Project Readme</h3>
 
@@ -76,7 +76,7 @@ REMEMBER TO DISCONNECT FROM THE VPN ON THE LAPTOP WHEN YOU ARE GOING TO LAUNCH C
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](https://github.com/PabloLopezSO/gpuProject/blob/main/resources/streamLitCapture.png?raw=true)
+![Product Name Screen Shot](https://user-images.githubusercontent.com/77831591/170317681-f9c913e1-0318-4536-a2d6-f652a7ab201e.png)
 
 This project is a machine learning oriented project, What I want to say with this .. This project has many different outputs, you can use it for Gpu Pricing (Like mine), stocks, stock pricing ... And many more things, even things related to medicine.
 
